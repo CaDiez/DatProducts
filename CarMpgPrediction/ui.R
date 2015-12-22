@@ -13,7 +13,7 @@ shinyUI(fluidPage(
                 sidebarPanel(
                   #Some documentation about the data
                   h4("Documentation:"),
-                  p("To get help follow this: ", a("Help ", href="http://rpubs.com/CaDiez/CarMpgPredictionPres")),
+                  p("To get help follow this: ", a("Help ", href="http://rpubs.com/CaDiez/MarMpgPredictionDoc")),
                   #p("The data mtcars was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74)."),
                   #Instructions
                   h4("How to use this application:"),

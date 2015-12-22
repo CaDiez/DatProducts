@@ -23,26 +23,14 @@ Considerations for the analysis
 - Develop a Shiny web application based on a prediction model.
 - The statistical model base has been taken from a previous class exercise, nevertheless it have been modified for this new specific purpose.
 - This documentation file was made using R Studio Presenter.
-- Now, to introduce the reader with data lets take a look of the data set
-
-```{r}
-head(mtcars, n=3)
-```
-
-A quick overview on the prediction model in R
-========================================================
-With this data and variables, I have used the following chunk of code (example) in R to predict the output:
-
-```{r}
+- The prediction model used is as follows:
+```{r, results='hide'}
 #Build model
 fit <- lm(mpg ~ wt + am + am*wt, mtcars)
-
 weight   = 4.0      # 4 Weight (lb/1000)
 transm   = 1        # Transmission (0 = automatic, 1 = manual)
-
 predict(fit, data.frame(wt = weight, am = transm))
 ```
-
 
 How to use Shiny Application
 ========================================================

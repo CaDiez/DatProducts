@@ -2,7 +2,7 @@
 title: "Developing Data Products - Course Project"
 author: "Carlos Alberto Guevara Diez"
 date: "December, 2015"
-output: html_document
+output: pdf_document
 ---
 
 ***
@@ -31,4 +31,4 @@ The application must include the following:
 https://cadiez.shinyapps.io/CarMpgPrediction
 
 **Presentation (Using rStudio Presenter):**  
-http://rpubs.com/CaDiez/CarMpgPredictionPres
+http://rpubs.com/CaDiez/MarMpgPredictionDoc

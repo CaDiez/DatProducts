@@ -781,37 +781,14 @@ hljs.initHighlightingOnLoad();
 <li>Develop a Shiny web application based on a prediction model.</li>
 <li>The statistical model base has been taken from a previous class exercise, nevertheless it have been modified for this new specific purpose.</li>
 <li>This documentation file was made using R Studio Presenter.</li>
-<li>Now, to introduce the reader with data lets take a look of the data set</li>
+<li>The prediction model used is as follows:</li>
 </ul>
-
-<pre><code class="r">head(mtcars, n=3)
-</code></pre>
-
-<pre><code>               mpg cyl disp  hp drat    wt  qsec vs am gear carb
-Mazda RX4     21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
-Mazda RX4 Wag 21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
-Datsun 710    22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
-</code></pre>
-
-</div>
-
-</section>
-<section data-transition="default" data-transition-speed="slow">
-<h3>A quick overview on the prediction model in R</h3>
-<div class="slideContent" >
-<p>With this data and variables, I have used the following chunk of code (example) in R to predict the output:</p>
 
 <pre><code class="r">#Build model
 fit &lt;- lm(mpg ~ wt + am + am*wt, mtcars)
-
 weight   = 4.0      # 4 Weight (lb/1000)
 transm   = 1        # Transmission (0 = automatic, 1 = manual)
-
 predict(fit, data.frame(wt = weight, am = transm))
-</code></pre>
-
-<pre><code>       1 
-9.957406 
 </code></pre>
 
 </div>
